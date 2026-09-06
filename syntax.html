@@ -6,8 +6,6 @@
 <link href="_css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-  <h1>
-    Comp 484
   <h1>Comp 484</h1>
   <h2>HTML Syntax</h2>
 
@@ -38,12 +36,10 @@
 <p>If you&rsquo;ve looked at HTML pages before, you&rsquo;ve probably noticed a long, somewhat intimidating tag just before the opening HTML tag. This is a doctype declaration and it&rsquo;s a very important but often misunderstood component of HTML pages. Essentially, it tells the user agent parsing your page which version of HTML (or XHTML) to expect, so that it knows which syntax rules to use when rendering your page. The doctype you use should be based on the version of HTML you&rsquo;re using to author the page. While that all sounds good in theory, in reality most of the time a doctype is simply triggering &ldquo;standards-mode&rdquo; rather than &ldquo;quirks mode&rdquo; (based on older browsers non-standard way of rendering pages). For that reason alone, all HTML documents should be preceded by a doctype declaration. For more information on doctypes, and the history behind them, check out Mark Pilgrim&rsquo;s excellent section on doctypes from his <em>Dive Into HTML5</em> book. Here are some of the more common HTML doctypes:</p>
 <h4>HTML 4.0 Transitional</h4>
 <pre><code>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</code></pre>
-XHTML 1.0 Transitional
 <h4>XHTML 1.0 Transitional</h4>
 <pre><code>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;</code></pre>
-HTML5
-<pre><code>&lt;!DOCTYPE HTML&gt;</code>
 <h4>HTML5</h4>
+<pre><code>&lt;!DOCTYPE HTML&gt;</code></pre>
 <h3>Element attributes</h3>
 <p>Some elements can be enhanced through the use of attributes. Attributes allow you to provide more information or additional functionality to the content. Attributes are added to the opening tag of an element and consist of two parts, the <strong>name</strong> and <strong>value</strong>. Although the syntax varies based on the version of HTML you&rsquo;re using, it&rsquo;s standard practice to put values within quotation marks.</p>
 <pre><code>&lt;h1 class=&rdquo;headline&rdquo;&gt;Article&rsquo;s main headline&lt;/h1&gt;</code></pre>
@@ -60,6 +56,7 @@ HTML5
   HTML5, on the other hand, expands the concept of content types to seven different categories of content, with some elements belonging to multiple categories. This replaces the concept of block-level and inline-level elements and adds some additional nesting syntax rules. For the most part, the rules around nesting elements make sense and are fairly easy to pick up. You should be prepared, however, for it to take some time before you fully understand all of the rules surrounding nesting elements. One way to making sure to your code is structured properly is to validate your code through a service like the W3C&rsquo;s Markup Validation service.</p>
 <h3>Commenting code</h3>
 <p>Often it is helpful to leave notes to yourself or other developers within your code. Perhaps you want to remind yourself what a certain script does, or remind a co-worker how to properly structure specific content. To do this, you&rsquo;ll use comments. Comments should appear on their own line, and typically appear directly before or after the code they refer to. Comments begin with a left-angle bracket, an exclamation point, and two hyphens (&lt;!--) and end with two hyphens followed by a right-angle bracket (--&gt;).</p>
+<h4>Comment syntax</h4>
 <pre><code>&lt;!-- This is a comment --&gt;</code></pre>
 <h3>Special characters</h3>
 <p>Certain characters are reserved in HTML, meaning that you shouldn&rsquo;t use them outside of their specific purpose. The angle brackets, for example, are reserved for tags, and using them anywhere outside of a tag could cause parsing errors in browsers. However, you can still use these reserved characters and other special characters or symbols by using what is known as a <strong>named character entity</strong>. These special codes tell the user agent to replace the entity code with a specific character. These entities begin with an ampersand (&amp;) followed by the entity name and end with a semicolon (;). To display an ampersand, for example, you would type <strong>&amp;amp;</strong> in place of the actual ampersand. You can find named character entity lists within the HTML specifications, although the format for them can be a bit hard to read. You can also find a useful list of character entities on the <a href="reference.html#named">HTML Reference</a> page, and a more comprehensive list on Wikipedia.</p>
