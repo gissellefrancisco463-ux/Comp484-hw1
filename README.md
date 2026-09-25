@@ -1,6 +1,6 @@
-# HW2 Structuring Page Content
+# HW1 Formatting Page Content
 
-This assignment focuses on creating a consistent and semantic structure across all HTML pages. 
+Practice formatting HTML pages using headings, paragraphs, emphasis, special characters, and images.
 
 ## 🚀 Live Demo
 
